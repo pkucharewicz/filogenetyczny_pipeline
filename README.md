@@ -1,7 +1,9 @@
 ## Filogenetyczny pipeline
+Konstrukcja drzew gatunków i superdrzew dla zadanej listy numerów dostępu proteomów z NCBI. Białka są klastrowane, klastry poddawane uliniowieniu (przy zastosowaniu parametru --bijective również modyfikacji, która poprzez porównania sekwencji w obrębie klastra usuwa pewne sekwencje, jeśli występują duplikaty z jednego gatunku), a następnie metodą Nejghbour Joining dla każdego klastra konsturowane jest drzewo genów. Z usyskanych drzew obliczane są drzewa konsensusowe i super drzewa.
 
 ### Dependencies
 
+* MMseqs2 (https://github.com/soedinglab/MMseqs2)
 * MAFFT (https://mafft.cbrc.jp/alignment/software/linux.html)
 * Deduptree (https://genome.cs.iastate.edu/DupTree)
 * NCBI datasets (https://www.ncbi.nlm.nih.gov/datasets/docs/v2/download-and-install/)
